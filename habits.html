@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Habits</title>
+  <style>
+  .bouncy-text {
+      font-size: 32px;
+      font-weight: bold;
+      color: #7c00b5;
+      text-align: center;
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #17012f;
+      color: #54009d;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .grid-container {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      padding: 10px;
+      background-color: #17012f;
+    }
+
+    .box {
+      background-color: rgb(137, 3, 152);
+      color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 16px;
+      border-radius: 8px;
+    }
+
+    h2, h4 {
+      margin: 0 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="bouncy-text">MY HABITS</header>
+
+  <div class="grid-container">
+    <div class="box">
+      <h2>Skating</h2>
+      <h4>Skating has been one of my favourite sports ever. I have many memories with it because I started skating with my friend. and my brother started it too cuz he tried it also liked it, ofc i had my accidents but still it was fun</h4>
+    </div>
+    <div class="box">
+      <h2>Coding</h2>
+      <h4>I've been coding since I was a kid, so of course it's one of my favourite habits. and at the moment i'm learning data science using python which is a really interesting thing to me and i think i will take up this habit as my career</h4>
+    </div>
+    <div class="box">
+      <h2>socialising</h2>
+      <h4>i've been socialising ever since i was a kid and i had many friends in every year of my life but in grade 7 i focused on it to strenghten it and to boost up my confidence and also i wanted to be popular in school and thankfully i made great progress in that</h4>
+    </div>
+    <div class="box">
+      <h2>robotics</h2>
+      <h4>i loved robots so much when i was a kid i even learned to make robots using legoo and i was rly happy with it too i wanted to become and engineer at that point and its also cuz most of my family are engineers maybe its one of the reasons i wanna be one</h4>
+    </div>
+  </div>
+</body>
+</html>
