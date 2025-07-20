@@ -4,13 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>achievments</title>
-    <style>.box:last-child {
-  grid-column: span 2;
-}</style>
 </head>
+    
 <body>
   <header class="bouncy-text">MY ACHIEVMENTS</header>
-
+    
   <div class="grid-container">
     <div class="box">
       <h1>Career</h1>
@@ -23,7 +21,15 @@
     <div class="box">
       <h1>mindfully</h1>
       <h4>as a kid i was really sensitive to anything and got emotional really quickly, which also made me depressed and lonely most of the time, but i didn't like that, so i wanted to change that, ii shifted my mindset from wanting to be cared for and feel attention, to caring for myself and making me happy and not waiting for someone else to do so, and as the quote says "Nothing stays, not even people"</h4>
-    </div>
+    </div> 
   </div>
+    <script>
+        const grid = document.querySelector('.grid-container');
+        const boxes = grid.querySelectorAll('.box');
+
+        if (boxes.length === 3) {
+            boxes[2].classList.add('span-full');
+        }
+    </script>
 </body>
 </html>
