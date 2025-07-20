@@ -5,79 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <title>socials</title>
-  <style>
-    #copyButton {
-      padding: 10px 20px;
-      background-color: #17012f;
-      color: #54009d;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-  .bouncy-text {
-      font-size: 32px;
-      font-weight: bold;
-      color: #7c00b5;
-      text-align: center;
-      animation: bounce 1s infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px);
-      }
-    }
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #17012f;
-      color: #54009d;
-      padding: 15px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .grid-container {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px;
-      padding: 10px;
-      background-color: #17012f;
-    }
-
+      <style>
     .box {
       background-color: rgb(137, 3, 152);
-      color: #54009d;
+      color: white;
       border: 1px solid #ccc;
       padding: 15px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-size: 35px;
+      font-size: 30px;
       border-radius: 8px;
+      text-align: center;
     }
-
-    h2, h4 {
-      margin: 0 0 10px 0;
-    }
-  </style>
+    </style>
 </head>
 <body>
   <header class="bouncy-text">MY SOCIALS</header>
@@ -89,10 +30,12 @@
 
     <div class="box">
       <h2><a href="https://www.facebook.com/share/1EFh8Vh9zy/">facebook</a></h2>
+
     </div>
 
     <div class="box">
-    <h2>my phone number</h2>
+      <span style="color: #54009d;"><h2>my phone number</h2></span>
+    
     <p id="01286637869"></p>
   <button id="copyButton" onclick="copyText()">Copy</button>
 
@@ -105,11 +48,10 @@
         console.error("Failed to copy: ", err);
       });
     }
-  </script>
-  </div>
-    <div class="box">
-      <h2></h2>
+  </script></div>
+  <div class="box">
+      <h2><a href="https://github.com/yassin1848f">github</a></h2>
     </div>
-  </div>
+  
 </body>
 </html>
